@@ -1,5 +1,16 @@
-.center {
-    text-align: center;
-    width: 50%;
-    height: 50%;
+.main-div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    min-width: 150px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
 }

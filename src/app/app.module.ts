@@ -10,6 +10,19 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Importaciones para los Formularios
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+
+// Importaciones de Angular Material
+import { MatSliderModule } from '@angular/material/slider';
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { TopComponent } from './navTop/top/top.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +31,24 @@ import { HeaderComponent } from './header/header.component';
     RegisterComponent,
     DashaboardComponent,
     LandingPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    TopComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    //Modulos de Formularios
+    FormsModule,
+    ReactiveFormsModule,
+    //Modulos de Material
+    MatSliderModule,
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
